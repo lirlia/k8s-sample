@@ -18,7 +18,11 @@ spec:
         name: nginx
         ports:
         - containerPort: 80
-
+        resources:
+          limits:
+            cpu: "1"
+          requests:
+            cpu: "0.5"
 ---
 
 apiVersion: v1
