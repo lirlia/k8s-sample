@@ -1,18 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: nginx
   name: nginx
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: nginx
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: nginx
     spec:
@@ -37,4 +34,3 @@ spec:
       port: 80
       targetPort: 80
       nodePort: 30092
-
