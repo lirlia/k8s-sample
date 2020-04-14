@@ -9,7 +9,4 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: nginx
-  targetCPUUtilizationPercentage: 40
-status:
-  currentReplicas: 0
-  desiredReplicas: 0
+  targetCPUUtilizationPercentage: 20
